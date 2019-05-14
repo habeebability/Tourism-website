@@ -1,2 +1,10 @@
 # Tourism-website
-A website for tourist
+This is a website for tourist
+
+# To Contribute
+
+Fork the repository and click on the green button "Clone or Download"
+
+Go to your command line or terminal and run "git clone <urloftheforkedrepository>"
+
+Change directory to tourism-website and start contributing
