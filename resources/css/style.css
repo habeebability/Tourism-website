@@ -1,8 +1,13 @@
+/***Universal Selector***/
+/* Reseting the page */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Setting default font style*/
 
 html {
     color: #555;
@@ -12,10 +17,7 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
+/* Styling the background */
 
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/bank.jpg);
@@ -24,6 +26,68 @@ body{
     height: 100vh;
     
 }
+
+/*****
+Styling of the navigation bar starts here
+*****/
+
+/*Moving the nav bar to the right*/
+
+.nav > .ul{
+    margin: 45px 0px 0px 650px ;
+    
+}
+
+/*Making the li on a straight line and also removing the bullet*/
+li{
+    list-style-type: none;
+    display: inline;    
+    margin-left: 15px;
+}
+
+/*Formating the anchor tag*/
+
+li a{
+    text-decoration: none;
+    font-size: 120%;
+    color: white;
+}
+
+/*Formatting the anchor tag on active state*/
+
+.activelink{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    border-radius: 3px;
+}
+
+/*Formatting the anchor tag on hover state*/
+
+a:hover{
+    border-bottom: 2px solid #e67e22;
+}
+
+
+/*****
+Main content starts here
+*****/
+
+
+/*Formating the h1 element*/
+
+h1{
+    margin-top: 0 !important;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/*Positioning the main contain in the center horizontally*/
+
 .container{
     position: absolute;
     width: 1140px;
@@ -32,16 +96,7 @@ body{
     transform: translate(-50%, 50%);
 }
 
-h1{
-    margin-top: 0 !important;
-    margin-bottom: 15px;
-    color: #fff;
-    font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-}
+/* Formatting the read more button (visited and link state) */
 
 .btn:link, 
 .btn:visited {
@@ -55,13 +110,17 @@ h1{
     
 }
 
+/* Formatting the read more button (hover and active state) */
+
 .btn:hover,
 .btn:active {
     background-color: #cf6d17;
+  transition: background-color 2.5s;
 }
 .logo {
     width: 150px;
     height: auto;
     margin-top: 5px;
     margin-left: 5px;
+    
 }
