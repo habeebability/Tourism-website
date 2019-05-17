@@ -32,7 +32,7 @@ body{
     transform: translate(-50%, 50%);
 }
 
-nav > ul{
+.nav > .ul{
     margin: 45px 0px 0px 650px ;
     
 }
@@ -51,7 +51,6 @@ li a{
 
 a:hover{
     border-bottom: 2px solid #e67e22;
-    
 }
 
 
