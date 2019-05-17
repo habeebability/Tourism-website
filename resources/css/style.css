@@ -34,7 +34,7 @@ Styling of the navigation bar starts here
 /*Moving the nav bar to the right*/
 
 .nav > .ul{
-    margin: 45px 0px 0px 650px ;
+    margin: 0px 0px 0px 650px ;
     
 }
 
@@ -43,6 +43,8 @@ li{
     list-style-type: none;
     display: inline;    
     margin-left: 15px;
+    position: relative;
+    bottom: 1px;
 }
 
 /*Formating the anchor tag*/
@@ -115,12 +117,13 @@ h1{
 .btn:hover,
 .btn:active {
     background-color: #cf6d17;
-  transition: background-color 2.5s;
+    transition: background-color 2.5s;
 }
-.logo {
-    width: 150px;
-    height: auto;
-    margin-top: 5px;
-    margin-left: 5px;
-    
+
+.logo{
+    position: relative;
+    width:150px;
+    height: 50px;
+    top: 40px;
+    margin-left: 15px;
 }
