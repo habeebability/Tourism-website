@@ -59,3 +59,9 @@ h1{
 .btn:active {
     background-color: #cf6d17;
 }
+.logo {
+    width: 150px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+}
