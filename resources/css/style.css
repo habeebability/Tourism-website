@@ -1,8 +1,13 @@
+/***Universal Selector***/
+/* Reseting the page */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Setting default font style*/
 
 html {
     color: #555;
@@ -12,10 +17,7 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
+/* Styling the background */
 
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/bank.jpg);
@@ -24,24 +26,26 @@ body{
     height: 100vh;
     
 }
-.container{
-    position: absolute;
-    width: 1140px;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
+
+/*****
+Styling of the navigation bar starts here
+*****/
+
+/*Moving the nav bar to the right*/
 
 .nav > .ul{
     margin: 45px 0px 0px 650px ;
     
 }
 
+/*Making the li on a straight line and also removing the bullet*/
 li{
     list-style-type: none;
     display: inline;    
     margin-left: 15px;
 }
+
+/*Formating the anchor tag*/
 
 li a{
     text-decoration: none;
@@ -49,10 +53,27 @@ li a{
     color: white;
 }
 
+/*Formatting the anchor tag on active state*/
+
+.activelink{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    border-radius: 3px;
+}
+
+/*Formatting the anchor tag on hover state*/
+
 a:hover{
     border-bottom: 2px solid #e67e22;
 }
 
+
+/*****
+Main content starts here
+*****/
+
+
+/*Formating the h1 element*/
 
 h1{
     margin-top: 0 !important;
@@ -65,6 +86,18 @@ h1{
     word-spacing: 4px;
 }
 
+/*Positioning the main contain in the center horizontally*/
+
+.container{
+    position: absolute;
+    width: 1140px;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/* Formatting the read more button (visited and link state) */
+
 .btn:link, 
 .btn:visited {
     display: inline-block;
@@ -76,6 +109,8 @@ h1{
     color: #fff;
     
 }
+
+/* Formatting the read more button (hover and active state) */
 
 .btn:hover,
 .btn:active {
